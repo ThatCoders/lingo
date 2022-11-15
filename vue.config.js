@@ -13,7 +13,7 @@ module.exports = {
     open: true, //配置自动启动浏览器
     proxy: {
       "/apis": {
-        target: "http://106.75.136.242:8088/", //  本地
+        target: "http://localhost:8088/", //  本地
         changeOrigin: true,
         pathRewrite: {
           '^/apis': ''
@@ -22,7 +22,7 @@ module.exports = {
     },
   },
   // 构建输入文件夹
-  outputDir: process.env.NODE_ENV == 'web' ? 'search' : 'newTabs/dist',
+  outputDir: process.env.NODE_ENV == 'web' ? 'search' : 'dist',
 
   css: {
     // 是否使用css扩展
